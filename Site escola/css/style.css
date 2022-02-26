@@ -54,11 +54,20 @@ img {
   color: #fff;
 }
 
-.logotipo_escola {
-}
-
 .logotipo_escola img {
   border-radius: 6px;
   width: 80px;
   height: 80px;
+}
+
+
+/* Introdução */
+
+.introducao {
+  width: 100%;
+  height: 480px;
+  background: url('../img/fundo.jpg') no-repeat center;
+  background-size: cover;
+  margin-top: 110px;
+  padding-top: 80px;
 }
