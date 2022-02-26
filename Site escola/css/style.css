@@ -21,7 +21,7 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #223759; /* Amarelo */
+  background: #223759; 
   padding: 15px 0;
   z-index: 10;
 }
