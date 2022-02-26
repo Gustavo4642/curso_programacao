@@ -33,11 +33,11 @@ img {
 .header_menu ul li {
   display: inline-block;
   margin-left: 25px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .header_menu ul li a {
-  color: #000;
+  color: #ecc601;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -52,4 +52,13 @@ img {
 
 .header_menu ul li a.menu_ativo {
   color: #fff;
+}
+
+.logotipo_escola {
+}
+
+.logotipo_escola img {
+  border-radius: 6px;
+  width: 80px;
+  height: 80px;
 }
