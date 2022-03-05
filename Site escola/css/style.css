@@ -4,6 +4,20 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #222;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #424242;
+  border: 3px solid #222;
+  border-radius: 15px;
+}
+
 p {
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 14px;
@@ -21,7 +35,7 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #223759; 
+  background: #223759;
   padding: 15px 0;
   z-index: 10;
 }
@@ -32,7 +46,7 @@ img {
 
 .header_menu ul li {
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 35px;
   margin-top: 30px;
 }
 
@@ -41,33 +55,367 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 17px;
+  line-height: 15px;
   padding: 10px 0;
+  transition: color 0.3s;
 }
 
 .header_menu ul li a:hover {
   color: #fff;
+  text-shadow: 0px 0px 12px;
 }
 
 .header_menu ul li a.menu_ativo {
   color: #fff;
 }
-
-.logotipo_escola img {
-  border-radius: 6px;
-  width: 80px;
-  height: 80px;
+.header div .cesf {
+  position: absolute;
+  width: 284px;
+  height: 76px;
+  left: 120px;
+  top: -10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 5px;
+  color: #fff;
 }
 
+.header div .cesf span {
+  color: transparent;
+  transition: 0.3s;
+}
+
+.header div .cesf span:hover {
+  color: white;
+}
+
+.header div .cesf ly {
+  color: #ecc601;
+}
+
+.logotipo_escola img {
+  border-radius: 60px;
+  width: 80px;
+  height: 80px;
+  transition: box-shadow 0.5s;
+}
+
+.logotipo_escola img:hover {
+  box-shadow: 0 0 12px black;
+}
 
 /* Introdução */
 
 .introducao {
   width: 100%;
   height: 480px;
-  background: url('../img/fundo.jpg') no-repeat center;
+  background: url('../img/fundo-intro.png') no-repeat center;
   background-size: cover;
   margin-top: 110px;
   padding-top: 80px;
+}
+
+.text-intro {
+  position: absolute;
+  width: 538px;
+  height: 360px;
+  left: 147px;
+  top: 161px;
+  background: rgba(103, 125, 160, 0.555);
+  border-radius: 10px;
+}
+
+.text-intro h3 {
+  position: absolute;
+  width: 487px;
+  height: 60px;
+  margin-left: 30px;
+  margin-top: 15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  color: #0f1f3a;
+}
+
+.text-intro p {
+  position: absolute;
+  width: 315px;
+  height: 242px;
+  margin-top: 78px;
+  margin-left: 100px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #0f1f3a;
+}
+
+.img-intro {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  left: 790px;
+  top: 161px;
+  background: url(../img/img-intro.jpg);
+  background-size: cover;
+  box-shadow: 0 0 7px black;
+  border-radius: 10px;
+}
+
+/* Informativo */
+
+.informativo {
+  position: relative;
+  width: 820px;
+  height: 369px;
+  left: 290px;
+  top: 145px;
+  margin-bottom: 250px;
+  padding-bottom: 458px;
+  background: url(../img/fundo-info.jpg);
+  background-size: cover;
+  box-shadow: 2px 4px 11px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.informativo h3 {
+  position: absolute;
+  width: 239px;
+  height: 40px;
+  left: 300px;
+  top: -80px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 35px;
+  color: #1b2e4d;
+}
+
+.informativo ul {
+  position: absolute;
+  left: 360px;
+  top: 370px;
+  line-height: 255px;
+}
+
+.informativo ul li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+  background: #020202;
+  border-radius: 50%;
+}
+
+/* Quem Somos */
+
+.quem-somos {
+  width: 100%;
+  height: 600px;
+  background: url('../img/bg-qs.png') no-repeat center;
+  background-size: cover;
+  margin-top: 110px;
+  padding-top: 80px;
+}
+
+.quem-somos h3 {
+  position: absolute;
+  width: 239px;
+  height: 40px;
+  left: 570px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 35px;
+  color: #000e3f;
+}
+
+.img-qs {
+  position: relative;
+  width: 820px;
+  height: 350px;
+  left: 290px;
+  top: 80px;
+  background: url('../img/Design\ sem\ nome\ \(2\).png') no-repeat center;
+  background-size: cover;
+  box-shadow: 2px 4px 11px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.quem-somos ul {
+  position: absolute;
+  left: 650px;
+  line-height: 255px;
+}
+
+.quem-somos ul li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+  background: #000e3f;
+  border-radius: 50%;
+}
+
+/* Eventos */
+
+.eventos {
+  position: relative;
+  width: 820px;
+  height: 360px;
+  left: 290px;
+  top: 145px;
+  margin-bottom: 250px;
+  padding-bottom: 150px;
+  background: url(../img/evento.png);
+  background-size: cover;
+  box-shadow: 2px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.eventos h3 {
+  position: absolute;
+  width: 239px;
+  height: 40px;
+  left: 320px;
+  top: -80px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 35px;
+  color: #1b2e4d;
+}
+
+.eventos ul {
+  position: absolute;
+  left: 365px;
+  top: 280px;
+  line-height: 255px;
+}
+
+.eventos ul li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+  background: #000e3f;
+  border-radius: 50%;
+}
+
+/* Fotter */
+
+.footer {
+  height: 210px;
+  background-color: #ecc601;
+}
+
+.footer div {
+  display: inline;
+  margin-top: 18px;
+  color: #1b2e4d;
+}
+
+.footer h3 {
+  font-size: 24px;
+  font-style: bold;
+  line-height: 30px;
+}
+
+.footer ul li {
+  line-height: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.footer ul li a {
+  color: #1b2e4d;
+  border: solid 1px transparent;
+  transition: border-bottom-color 0.2s linear;
+}
+
+.footer ul li a:hover {
+  border-bottom-color: #1b2e4d;
+}
+
+/* fotter-historia*/
+
+.footer_historia {
+  position: absolute;
+  left: 275px;
+  width: 132px;
+  height: 205px;
+}
+
+/* fotter-contato */
+
+.footer_contato {
+  position: absolute;
+  left: 590px;
+  width: 242px;
+  height: 170px;
+}
+
+/* footer_redes */
+
+.footer_redes {
+  position: absolute;
+  left: 950px;
+  width: 139px;
+  height: 110px;
+}
+
+.footer_redes ul li {
+  display: inline-block;
+}
+
+.footer_redes ul li a img {
+  margin-top: -5px;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: box-shadow 0.2s linear;
+}
+
+.footer_redes ul li a img:hover {
+  box-shadow: 0 0 7px black;
+}
+
+.footer_redes h3 {
+  font-size: 24px;
+  font-style: bold;
+  line-height: 15px;
+}
+
+/* copy */
+
+.copy {
+  background-color: #001536;
+  height: 40px;
+}
+
+.copy p {
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
 }
