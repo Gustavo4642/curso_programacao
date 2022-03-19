@@ -118,29 +118,54 @@ img {
   border-radius: 10px;
 }
 
-.informativo {
+.sessao-branca {
   width: 100%;
   background: #f2f2f2;
   text-align: center;
   padding: 60px 0;
 }
 
-.informativo .subtitulo {
+.sessao-branca .subtitulo {
   color: #223759;
   font-weight: bold;
   font-size: 36px;
   line-height: 40px;
 }
 
-.informativo_lista li {
+.sessao-branca_lista li {
   width: 100%;
   height: auto;
   margin: 30px auto;
 }
 
-.informativo_lista li img {
+.sessao-branca_lista li img {
   margin: 0 auto;
   box-shadow: 1px 1px 4px #cccccc;
+}
+
+.sessao-azul {
+  width: 100%;
+  background: #223759;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.sessao-azul .subtitulo {
+  color: #ecc601;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.sessao-azul_lista li {
+  width: 100%;
+  height: auto;
+  margin: 30px auto;
+}
+
+.sessao-azul_lista li img {
+  margin: 0 auto;
+  box-shadow: 1px 1px 4px #4c648c;
 }
 
 .hide {
