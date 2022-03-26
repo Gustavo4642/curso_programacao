@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -37,13 +38,13 @@
     </div>
   </section>
 
-  <section class="sessao-branca">
+  <section class="sessao-branca fadeInDown" data-slide="sessao-informativos" data-anime="1200">
     <div class="container ">
       <h2 class="subtitulo">INFORMATIVO</h2>
       <ul class="sessao-branca_lista">
         <li class="grid-8">
           <div>
-            <img src="img/evento.png" alt="Informativo 1">
+            <img src="img/eventos/catequese.jpg" alt="Informativo 1">
           </div>
         </li>
         <li class="grid-8 hide">
@@ -85,13 +86,13 @@
     </div>
   </section>
 
-  <section class="sessao-branca">
+  <section class="sessao-branca fadeInDown" data-slide="sessao-eventos" data-anime="1200">
     <div class="container">
       <h2 class="subtitulo">Eventos</h2>
       <ul class="sessao-branca_lista">
-        <li class="grid-8"><img src="img/evento.png" alt="Bicicleta Retrô"></li>
-        <li class="grid-8 hide"><img src="img/evento.png" alt="Bicicleta Retrô"></li>
-        <li class="grid-8 hide"><img src="img/evento.png" alt="Bicicleta Retrô"></li>
+        <li class="grid-8"><img src="img/eventos/acaoEntreAmigos.jpg" alt="Evento 1"></li>
+        <li class="grid-8 hide"><img src="img/eventos/catequese.jpg" alt="Evento 2"></li>
+        <li class="grid-8 hide"><img src="img/evento.png" alt="Evento 3"></li>
       </ul>
     </div>
   </section>
@@ -133,6 +134,12 @@
       </div>
     </div>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/simple-slide.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- JavaScript -->
 
 </body>
 
