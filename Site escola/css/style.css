@@ -303,3 +303,18 @@ img {
   position: absolute;
   height: 0px;
 }
+
+/*Estilo para smartphone*/
+@media only screen and (max-width: 787px) {
+  .text-intro h2 {
+    padding-bottom: 0;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .text-intro p {
+    height: auto;
+    width: 200px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
